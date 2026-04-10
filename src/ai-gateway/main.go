@@ -370,7 +370,7 @@ type OllamaResponse struct { Message Message `json:"message"` }
 
 func callOllama(msgs []Message, tools []OllamaTool) (*OllamaResponse, error) {
 	req := OllamaRequest{
-		Model:    "qwen3:4b", // qwen2.5:7b，有很好的工具调用功能以及中文处理和SQL书写能力
+		Model:    "qwen2.5:7b", // qwen2.5:7b，有很好的工具调用功能以及中文处理和SQL书写能力
 		Messages: msgs,
 		Stream:   false,
 		Tools:    tools,
